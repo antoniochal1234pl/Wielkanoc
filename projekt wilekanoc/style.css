@@ -1,0 +1,399 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Emilys+Candy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cef4f8;
+    color: #333;
+}
+
+header {
+    background-color: #cef4f8;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #cef4f8;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d1cceb;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Emilys Candy', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #d1cceb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    background-color: #c9bfde;
+}
+
+.pasek {
+    height: 15px;
+    background-color: #fdf0d7;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pasek-dol {
+    height: 15px;
+    background-color: #fdf0d7;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: #f5d3e0;
+    min-height: 650px;
+}
+
+.galeria-kontener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.galeria-sekcja {
+    background-color: #fff9f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-sekcja h2 {
+    color: #000;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.galeria-sekcja p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+body.galeria-page .galeria-sekcja img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+body.kontakt-page main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+body.kontakt-page .lewo,
+body.kontakt-page .prawo {
+    flex: 1 1 45%;
+    background-color: #fff9f0;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 280px;
+}
+
+body.kontakt-page .lewo {
+    text-align: center;
+}
+
+body.kontakt-page .lewo > div {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+body.kontakt-page .lewo h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+body.kontakt-page .lewo p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+body.kontakt-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.kontakt-page input,
+body.kontakt-page textarea,
+body.kontakt-page button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1cceb;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+body.kontakt-page button {
+    background-color: #d1cceb;
+    cursor: pointer;
+}
+
+body.konkurs-page main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+body.konkurs-page .konkurs-sekcja {
+    background-color: #fff9f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.konkurs-page .konkurs-sekcja h3 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+body.konkurs-page .konkurs-sekcja p {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+body.historia-page main {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+body.historia-page .lewo,
+body.historia-page .prawo {
+    flex: 1;
+    background-color: #fff9f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prawo img {
+    align-self: bottom;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+body.wielkanoc .lewo,
+body.wielkanoc .prawo {
+    flex: 1;
+    padding: 30px;
+    min-height: 650px;
+}
+
+body.wielkanoc .prawo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.wielkanoc .prawo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body.wielkanoc .lewo h2 {
+    font-size: 32px;
+}
+
+body.wielkanoc .lewo p {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 42px;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .lewo, .prawo {
+        padding: 20px;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .lewo, .prawo {
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .prawo img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .lewo, .prawo {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    .lewo h2 {
+        font-size: 20px;
+    }
+
+    .lewo p {
+        font-size: 14px;
+    }
+
+    .prawo img {
+        max-width: 300px;
+    }
+
+    .pasek {
+        height: 12px;
+    }
+
+    footer {
+        border-top: 12px solid #fdf0d7;
+        padding: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cef4f8;
+    margin-top: 0;
+}
+.historia_lewo,
+.historia_prawo,
+.lewo img.historia_lewo,
+.prawo img.historia_lewo,
+.lewo img.historia_prawo,
+.prawo img.historia_prawo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.historia_lewo {
+    float: left;
+    margin: 0 15px 15px 0;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+.historia_prawo {
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+.historia{
+font-size: 10px;
+}
+.galeria-zdjecia {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;}
